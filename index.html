@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume and Cover Letter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><button id="coverLetterTab" aria-controls="coverLetter" aria-selected="true">Cover Letter</button></li>
+            <li><button id="resumeTab" aria-controls="resume" aria-selected="false">Resume</button></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="coverLetter" role="tabpanel" aria-labelledby="coverLetterTab">
+            <h2>Cover Letter</h2>
+            <p>
+                Dear Hiring Manager,
+                <br><br>
+                I am writing to express my interest in the [Job Title] position at [Company Name]. With [number] years of experience in [Your Industry], I am confident in my ability to contribute effectively to your team.
+                <br><br>
+                Sincerely,
+                <br>
+                John Doe
+            </p>
+        </section>
+        <section id="resume" role="tabpanel" aria-labelledby="resumeTab" hidden>
+            <h2>Resume</h2>
+            <p>Here you can put your resume content...</p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
