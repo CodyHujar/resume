@@ -23,11 +23,25 @@
     --nav-hover-bg-color: #444;
     --nav-active-border-color: #46AF46;
     --link-color: #46AF46;
-    --link-visited-color: #46AF46;
+    --link-visited-color: #80DBAC;
     --button-bg-color: #46AF46;
     --button-text-color: white;
     --button-hover-bg-color: #46AF46;
     --button-focus-outline-color: #46AF46;
+}
+
+[data-theme="dark"] a {
+    color: #46AF46;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] a:hover,
+[data-theme="dark"] a:focus {
+    color: white;
+}
+
+[data-theme="dark"] a:visited {
+    color: #80DBAC;
 }
 
 li a {
