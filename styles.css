@@ -21,13 +21,13 @@
     --nav-bg-color: #222;
     --nav-text-color: white;
     --nav-hover-bg-color: #444;
-    --nav-active-border-color: #559559;
-    --link-color: #559559;
-    --link-visited-color: #559559;
-    --button-bg-color: #559559;
+    --nav-active-border-color: #46AF46;
+    --link-color: #46AF46;
+    --link-visited-color: #46AF46;
+    --button-bg-color: #46AF46;
     --button-text-color: white;
-    --button-hover-bg-color: #559559;
-    --button-focus-outline-color: #559559;
+    --button-hover-bg-color: #46AF46;
+    --button-focus-outline-color: #46AF46;
 }
 
 a {
