@@ -1,20 +1,73 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const coverLetterTab = document.getElementById('coverLetterTab');
-    const resumeTab = document.getElementById('resumeTab');
-    const coverLetterSection = document.getElementById('coverLetter');
-    const resumeSection = document.getElementById('resume');
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll('nav ul li button');
+    const sections = document.querySelectorAll('main section');
+    const backToTopButton = document.getElementById('backToTop');
+    const themeToggleButton = document.getElementById('themeToggle');
+    const body = document.body;
 
-    coverLetterTab.addEventListener('click', () => {
-        coverLetterTab.setAttribute('aria-selected', 'true');
-        resumeTab.setAttribute('aria-selected', 'false');
-        coverLetterSection.hidden = false;
-        resumeSection.hidden = true;
+    // Function to show the selected section and hide others
+    function showSection(id) {
+        sections.forEach(section => {
+            if (section.id === id) {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+    }
+
+    // Add event listeners to buttons
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const contentId = button.getAttribute('data-content');
+            showSection(contentId);
+
+            // Remove active class from all buttons
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Add active class to clicked button
+            button.classList.add('active');
+        });
     });
 
-    resumeTab.addEventListener('click', () => {
-        resumeTab.setAttribute('aria-selected', 'true');
-        coverLetterTab.setAttribute('aria-selected', 'false');
-        resumeSection.hidden = false;
-        coverLetterSection.hidden = true;
+    // Initially show the first section
+    if (buttons.length > 0) {
+        buttons[0].click();
+    }
+
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Back to top button functionality
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Back to top button visibility
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            document.body.classList.add('scrolled');
+        } else {
+            document.body.classList.remove('scrolled');
+        }
+    });
+
+    // Theme toggle functionality
+    themeToggleButton.addEventListener('click', function() {
+        if (body.getAttribute('data-theme') === 'dark') {
+            body.removeAttribute('data-theme');
+        } else {
+            body.setAttribute('data-theme', 'dark');
+        }
     });
 });

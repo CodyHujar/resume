@@ -3,37 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume and Cover Letter</title>
+    <title>Cody Hujar's Resume and Cover Letter</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
 </head>
 <body>
     <header>
-        <h1>John Doe</h1>
+        <img src="profile-picture.png" alt="">
+        <h1>Cody Hujar</h1>
+        <span>Software Engineer</span>
     </header>
     <nav>
         <ul>
-            <li><button id="coverLetterTab" aria-controls="coverLetter" aria-selected="true">Cover Letter</button></li>
-            <li><button id="resumeTab" aria-controls="resume" aria-selected="false">Resume</button></li>
+            <li><button data-content="aboutThisSite">About This Site</button></li>
+            <li><button data-content="coverLetter" id="coverLetterTab">Cover Letter</button></li>
+            <li><button data-content="resume" id="resumeTab">Resume</button></li>
+            <li><button data-content="aboutMe">About Me</button></li>
         </ul>
     </nav>
-    <main>
-        <section id="coverLetter" role="tabpanel" aria-labelledby="coverLetterTab">
+    <main id="content">
+        <section id="aboutThisSite">
+            <h2>About This Site</h2>
+            <p>
+                Hello! And welcome to my resume and cover letter site.
+                <br><br>
+                This is not a standard portfolio page as I wanted to focus specifically on my accessibility knowledge and skills.
+                <br><br>
+                I highly encourage you to navigate my website via keyboard and/or screen reader.
+                <br><br>
+                Also, I wanted to highlight how familiar and comfortable I am with utilizing vanilla markup languages like HTML and CSS.
+                <br><br>
+                Javascript adds a lot of weight to a page and creates bloat on the Internet. For individuals on slow connections or utilizing mobile devices on anything below 5G, removing Javascript helps improve their experience navigating the web while also reducing global energy demand.
+                <br><br>
+                If you'd like to see some of my work that heavily utilizes Javascript and frameworks like React, please visit my current employer's <a href="https://www.milwaukeetool.com/">homepage</a>.
+                <br><br>
+                You can also check out the Packout Builder, an application I put a lot of focus into making accessible. You can visit the standalone version of the application <a href="https://www.milwaukeetool.com/packoutbuilderreact">here</a>.
+                <br><br>
+                Enjoy your stay and I hope we get to meet soon!
+            </p>
+        </section>
+        <section id="coverLetter" style="display: none;">
             <h2>Cover Letter</h2>
             <p>
                 Dear Hiring Manager,
                 <br><br>
-                I am writing to express my interest in the [Job Title] position at [Company Name]. With [number] years of experience in [Your Industry], I am confident in my ability to contribute effectively to your team.
+                I was thrilled to see the Travelers Software Engineer I position become available. I’ve had my eye on working for Travelers for quite some time now, and its focus is exactly what I’ve been hoping for as an experienced web developer. The opportunity to work for Travelers has appealed to me for many reasons. Travelers has a fantastic reputation for dependability, impressive community involvement, and doing right by its employees. 
                 <br><br>
-                Sincerely,
-                <br>
-                John Doe
+                In my current role as a Software Engineer I at Milwaukee Tool, I have honed my skills in various programming languages, including JavaScript, TypeScript, and C#. I have also gained extensive experience with frameworks such as React, Svelte, and Vue.js. My technical expertise is complemented by a strong commitment to web accessibility, demonstrated through my adherence to WCAG 2.0 (AA to AAA) standards and my proactive efforts to champion inclusive design principles across projects and my company.
+                <br><br>
+                I am actively engaged in the web accessibility community, consistently attending axe-con, a digital accessibility conference, out of personal interest and dedication to the field. I believe that the internet should be accessible to everyone. This belief drives me to build websites that can be utilized by all persons, regardless of their location or abilities. I am currently pursuing the Certified Professional in Accessibility Core Competencies Certificate to confirm my expertise in this area.
+                <br><br>
+                One of my crowning achievements was collaborating with multiple third-party accessibility firms and their distributor clients to integrate the Packout Builder into their websites, ensuring compliance with WCAG AA standards. In addition to this, I presented on web accessibility libraries within React, providing guides to ensure my fellow web developers could follow best practices. This role required meticulous attention to detail and a deep understanding of React and accessibility standards. I am eager to bring these skills to Travelers.
+                <br><br>
+                Travelers' reputation as a leader in the insurance industry and your dedication to fostering an inclusive workplace is truly uplifting. Your commitment to diversity and inclusion aligns perfectly with my values. Contributing to the Travelers mission of community, innovation, and accessibility by using my technical skills and shared passions is something I look forward to discussing with you.
+                <br><br>
+                Cody Hujar
             </p>
         </section>
-        <section id="resume" role="tabpanel" aria-labelledby="resumeTab" hidden>
+        <section id="resume" style="display: none;">
             <h2>Resume</h2>
-            <p>Here you can put your resume content...</p>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#experience">Relevant Experience</a></li>
+                    <li><a href="#education">Education & Certificates</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+            <h3 id="overview">Overview</h3>
+            <p>
+                I am a qualified and professional web developer with five years of experience in database administration and website design. Strong creative and analytical skills. Team player with an eye for detail.
+            </p>
+
+            <h3 id="experience">Relevant Experience</h3>
+            <h4>Software Engineer I</h4>
+            <span>Company</span>
+            <span>Dates</span>
+            <ul>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+            </ul>
+            <h4>Software Engineer I</h4>
+            <span>Company</span>
+            <span>Dates</span>
+            <ul>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+            </ul>
+            <h4>Software Engineer I</h4>
+            <span>Company</span>
+            <span>Dates</span>
+            <ul>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+            </ul>
+
+            <h3 id="education">Education & Certificates</h3>
+            <h4>Bachelor of Science</h4>
+            <span>University</span>
+            <span>Dates</span>
+
+            <h4>Bachelor of Science</h4>
+            <span>University</span>
+            <span>Dates</span>
+
+            <h3 id="skills">Skills</h3>
+            <h4>Soft Skills</h4>
+            <ul>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+            </ul>
+
+            <h4>Programming Languages</h4>
+            <ul>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+            </ul>
+
+            <h4>Software Skills</h4>
+            <ul>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+                <li>Skill stuff</li>
+            </ul>
+        </section>
+        <section id="aboutMe" style="display: none;">
+            <h2>About Me</h2>
+            <p>
+                <!-- Content of About Me -->
+                Here you can put your resume content...
+            </p>
         </section>
     </main>
+    <button id="backToTop" aria-label="Back to top">↑</button>
+    <button id="themeToggle" aria-label="Toggle theme">Toggle Theme</button>
     <script src="scripts.js"></script>
 </body>
 </html>
