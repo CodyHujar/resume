@@ -6,6 +6,8 @@
     --nav-text-color: white;
     --nav-hover-bg-color: #555;
     --nav-active-border-color: #4CAF50;
+    --link-color: #4CAF50;
+    --link-visited-color: #2e7d32;
     --button-bg-color: #4CAF50;
     --button-text-color: white;
     --button-hover-bg-color: #45a049;
@@ -20,6 +22,8 @@
     --nav-text-color: white;
     --nav-hover-bg-color: #444;
     --nav-active-border-color: #4CAF50;
+    --link-color: #4CAF50;
+    --link-visited-color: #2e7d32;
     --button-bg-color: #4CAF50;
     --button-text-color: white;
     --button-hover-bg-color: #45a049;
@@ -140,10 +144,10 @@ section:target {
 }
 
 #resume nav ul li a {
-    color: var(--nav-active-border-color);
+    color: var(--link-color);
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s, color 0.3s;
 }
 
 #resume nav ul li a:hover,
@@ -151,8 +155,27 @@ section:target {
     border-bottom: 2px solid var(--nav-active-border-color);
 }
 
+#resume nav ul li a:visited {
+    color: var(--link-visited-color);
+}
+
 h3 {
     margin-top: 1.5em;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover,
+a:focus {
+    color: var(--link-hover-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
 }
 
 #backToTop {
