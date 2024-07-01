@@ -235,3 +235,19 @@ body.scrolled #backToTop {
 #themeToggle:focus {
     outline: 3px solid var(--button-focus-outline-color);
 }
+
+.contact-info {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.contact-info .icon {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.contact-info .contact-detail {
+    font-weight: bold;
+}
