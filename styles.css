@@ -30,6 +30,21 @@
     --button-focus-outline-color: #559559;
 }
 
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover,
+a:focus {
+    color: var(--link-hover-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
@@ -49,9 +64,16 @@ header {
     text-align: center;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    margin-top: 1.5em;
+}
+
 header h1 {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: .25em;
 }
@@ -129,6 +151,8 @@ section:target {
     display: block;
 }
 
+/* Resume Nav */
+
 #resume nav {
     margin-bottom: 1em;
     background-color: var(--bg-color);
@@ -166,24 +190,25 @@ section:target {
     color: var(--link-visited-color);
 }
 
-h3 {
-    margin-top: 1.5em;
+/* Contact Info CSS */
+
+.contact-info {
+    font-size: 1.2em;
+    line-height: 1.8;
 }
 
-a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: color 0.3s;
+.contact-info .icon {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    vertical-align: middle;
+    display: inline-block;
 }
 
-a:hover,
-a:focus {
-    color: var(--link-hover-color);
+.contact-info .contact-detail {
+    font-weight: bold;
 }
 
-a:visited {
-    color: var(--link-visited-color);
-}
+/* Back to Top CSS */
 
 #backToTop {
     position: fixed;
@@ -213,6 +238,8 @@ body.scrolled #backToTop {
     display: block;
 }
 
+/* Theme Toggle CSS */
+
 #themeToggle {
     position: fixed;
     top: 1em;
@@ -234,20 +261,4 @@ body.scrolled #backToTop {
 
 #themeToggle:focus {
     outline: 3px solid var(--button-focus-outline-color);
-}
-
-.contact-info {
-    font-size: 1.2em;
-    line-height: 1.8;
-}
-
-.contact-info .icon {
-    margin-right: 0.5em;
-    font-size: 1.2em;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-.contact-info .contact-detail {
-    font-weight: bold;
 }
