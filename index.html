@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cody Hujar's Resume and Cover Letter</title>
+    <title>Cody Hujar's Resumé and Cover Letter</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
@@ -14,31 +14,31 @@
         <h1>Cody Hujar</h1>
         <span>Software Engineer</span>
     </header>
-    <nav>
+    <nav aria-label="main site menu">
         <ul>
-            <li><button data-content="aboutThisSite">About This Site</button></li>
+            <li><button data-content="about">About</button></li>
             <li><button data-content="coverLetter" id="coverLetterTab">Cover Letter</button></li>
             <li><button data-content="resume" id="resumeTab">Resume</button></li>
-            <li><button data-content="aboutMe">About Me</button></li>
+            <li><button data-content="contact">Contact</button></li>
         </ul>
     </nav>
     <main id="content">
-        <section id="aboutThisSite">
-            <h2>About This Site</h2>
+        <section id="about">
+            <h2>About</h2>
             <p>
                 Hello! And welcome to my resume and cover letter site.
                 <br><br>
                 This is not a standard portfolio page as I wanted to focus specifically on my accessibility knowledge and skills.
                 <br><br>
-                I highly encourage you to navigate my website via keyboard and/or screen reader.
+                You are highly encourage you to navigate my website via keyboard and/or screen reader.
                 <br><br>
-                Also, I wanted to highlight how familiar and comfortable I am with utilizing vanilla markup languages like HTML and CSS.
+                I wanted to highlight how familiar and comfortable I am with utilizing vanilla markup languages like HTML and CSS. This website utilizes a minimal amount of Javascript for menu navigation and ease of access needs such as visibility toggles and scroll-to-top buttons.
                 <br><br>
-                Javascript adds a lot of weight to a page and creates bloat on the Internet. For individuals on slow connections or utilizing mobile devices on anything below 5G, removing Javascript helps improve their experience navigating the web while also reducing global energy demand.
+                Javascript adds a lot of weight to a page and creates bloat on the Internet. For individuals on slow connections or utilizing mobile devices on anything below 5G, removing Javascript helps improve their experience navigating the web while also reducing global energy demand. Limiting Javascripted is a net positive to users and creators alike.
                 <br><br>
-                If you'd like to see some of my work that heavily utilizes Javascript and frameworks like React, please visit my current employer's <a href="https://www.milwaukeetool.com/">homepage</a>.
+                If you'd like to see some of my work that heavily utilizes Javascript and frameworks like React, please visit my current employer's <a href="https://www.milwaukeetool.com/" target="_new">homepage</a>.
                 <br><br>
-                You can also check out the Packout Builder, an application I put a lot of focus into making accessible. You can visit the standalone version of the application <a href="https://www.milwaukeetool.com/packoutbuilderreact">here</a>.
+                You can also check out the Packout Builder, an application I put a lot of focus into making accessible. You can visit the standalone version of the application <a href="https://www.milwaukeetool.com/packoutbuilderreact" target="_new">here</a>.
                 <br><br>
                 Enjoy your stay and I hope we get to meet soon!
             </p>
@@ -48,7 +48,7 @@
             <p>
                 Dear Hiring Manager,
                 <br><br>
-                I was thrilled to see the Travelers Software Engineer I position become available. I’ve had my eye on working for Travelers for quite some time now, and its focus is exactly what I’ve been hoping for as an experienced web developer. The opportunity to work for Travelers has appealed to me for many reasons. Travelers has a fantastic reputation for dependability, impressive community involvement, and doing right by its employees. 
+                I was thrilled to see the Travelers Software Engineer I position become available. I've had my eye on working for Travelers for quite some time now, and its focus is exactly what I've been hoping for as an experienced web developer. The opportunity to work for Travelers has appealed to me for many reasons. Travelers has a fantastic reputation for dependability, impressive community involvement, and doing right by its employees. 
                 <br><br>
                 In my current role as a Software Engineer I at Milwaukee Tool, I have honed my skills in various programming languages, including JavaScript, TypeScript, and C#. I have also gained extensive experience with frameworks such as React, Svelte, and Vue.js. My technical expertise is complemented by a strong commitment to web accessibility, demonstrated through my adherence to WCAG 2.0 (AA to AAA) standards and my proactive efforts to champion inclusive design principles across projects and my company.
                 <br><br>
@@ -63,81 +63,123 @@
         </section>
         <section id="resume" style="display: none;">
             <h2>Resume</h2>
-            <nav>
-                <ul>
-                    <li><a href="#overview">Overview</a></li>
-                    <li><a href="#experience">Relevant Experience</a></li>
-                    <li><a href="#education">Education & Certificates</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                </ul>
-            </nav>
             <h3 id="overview">Overview</h3>
             <p>
-                I am a qualified and professional web developer with five years of experience in database administration and website design. Strong creative and analytical skills. Team player with an eye for detail.
+                I am a qualified and professional web developer with over three years of experience in agile team workflows, modern languages such as Javascript and C#, useful frameworks like React and Svelt, and markup languages such as HTML and CSS.
+                <br><br>
+                One of my core competencies and passions is web accessibility. I spearheaded many efforts to ensure that the web pages I developed are accessible to all users. I am a diligent professional with a passion for research, learning, and creating, and I seek to achieve the best results for the benefit of the business and the users.
             </p>
+            <br>
+            <hr>
+            <br>
+            <p>
+                For ease of access, please utilize the navigation below to jump to a desired section of my resume.
+            </p>
+            <nav aria-label="resumé menu">
+                <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#education">Certificates</a></li>
+                </ul>
+            </nav>
 
-            <h3 id="experience">Relevant Experience</h3>
+            <h3 id="experience">Experience</h3>
             <h4>Software Engineer I</h4>
-            <span>Company</span>
-            <span>Dates</span>
+            <span>Milwaukee Tool</span><br>
+            <span>Oct 2021 - Present</span>
             <ul>
                 <li>Skill stuff</li>
                 <li>Skill stuff</li>
                 <li>Skill stuff</li>
             </ul>
-            <h4>Software Engineer I</h4>
-            <span>Company</span>
-            <span>Dates</span>
+            <h4>Digital Developer</h4>
+            <span>Kohl's</span><br>
+            <span>Nov 2019 - Oct 2021</span>
+            <p>This section is a collection of various roles and promotions that revolved around front-end development on the Kohls.com website. Detailed roles and dates can be found on my <a href="https://www.linkedin.com/in/codyhujar/" target="_new">LinkedIn</a>.</p>
             <ul>
                 <li>Skill stuff</li>
                 <li>Skill stuff</li>
                 <li>Skill stuff</li>
             </ul>
-            <h4>Software Engineer I</h4>
-            <span>Company</span>
-            <span>Dates</span>
+            <h4>Content Production Coordinator</h4>
+            <span>Kohl's</span><br>
+            <span>June 2018 - Nov 2019</span>
+            <p>This is a collection of various roles and promotions that revolved around content production on the Kohls.com website. Detailed roles and dates can be found on my <a href="https://www.linkedin.com/in/codyhujar/" target="_new">LinkedIn</a>.</p>
             <ul>
                 <li>Skill stuff</li>
                 <li>Skill stuff</li>
                 <li>Skill stuff</li>
             </ul>
-
-            <h3 id="education">Education & Certificates</h3>
-            <h4>Bachelor of Science</h4>
-            <span>University</span>
-            <span>Dates</span>
-
-            <h4>Bachelor of Science</h4>
-            <span>University</span>
-            <span>Dates</span>
 
             <h3 id="skills">Skills</h3>
             <h4>Soft Skills</h4>
             <ul>
-                <li>Skill stuff</li>
-                <li>Skill stuff</li>
-                <li>Skill stuff</li>
+                <li>Cultural competence</li>
+                <li>Emotional intelligence</li>
+                <li>Adaptability</li>
+                <li>Patience</li>
+                <li>Positive attitude</li>
+                <li>Public speaking</li>
+                <li>Conflict management</li>
             </ul>
 
             <h4>Programming Languages</h4>
             <ul>
-                <li>Skill stuff</li>
-                <li>Skill stuff</li>
-                <li>Skill stuff</li>
+                <li>Markdown (HTML/CSS)</li>
+                <li>Javascript</li>
+                <li>C#</li>
+                <li>Python</li>
             </ul>
 
-            <h4>Software Skills</h4>
+            <h4>Frameworks / Libraries</h4>
             <ul>
-                <li>Skill stuff</li>
-                <li>Skill stuff</li>
-                <li>Skill stuff</li>
+                <li>React</li>
+                <li>Vue.js</li>
+                <li>Svelt</li>
+                <li>Styled Components</li>
+                <li>Tailwind</li>
+                <li>Robot</li>
+                <li>Selenium</li>
             </ul>
-        </section>
-        <section id="aboutMe" style="display: none;">
-            <h2>About Me</h2>
+
+            <h4>Software / Applications</h4>
+            <ul>
+                <li>Sitecore</li>
+                <li>Oracle WCS</li>
+                <li>Azure DevOps</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe XD</li>
+                <li>Adobe InDesign</li>
+                <li>Adobe Illustrator</li>
+                <li>Figma</li>
+                <li>Sketch</li>
+                <li>Visual Studio Code</li>
+                <li>Visual Studio 2019</li>
+                <li>BrowserStack</li>
+                <li>Google Suit (Docs, Sheets, Ext)</li>
+                <li>Microsoft Suit (Word, Powerpoint, Ext)</li>
+            </ul>
+
+            <h3 id="education">Education</h3>
             <p>
-                <!-- Content of About Me -->
-                Here you can put your resume content...
+                <span>Bachelors in Science</span><br>
+                Wildlife Biology - Terrestrial<br>
+                University of Montana<br>
+                2012 -2015
+            </p>
+
+            <h3 id="certificates">Certificates</h3>
+            <p>
+                <span>Professional Scrom Master&trade; I (PSM I)</span><br>
+                Scrum.org<br>
+                Dec 2022
+            </p>
+        </section>
+        <section id="contact" style="display: none;">
+            <h2>Contact</h2>
+            <p>
+                jdshkfladjkldasf
             </p>
         </section>
     </main>

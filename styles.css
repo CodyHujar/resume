@@ -5,13 +5,13 @@
     --nav-bg-color: #333;
     --nav-text-color: white;
     --nav-hover-bg-color: #555;
-    --nav-active-border-color: #4CAF50;
-    --link-color: #4CAF50;
-    --link-visited-color: #2e7d32;
-    --button-bg-color: #4CAF50;
+    --nav-active-border-color: #47794a;
+    --link-color: #47794a;
+    --link-visited-color: #47794a;
+    --button-bg-color: #47794a;
     --button-text-color: white;
-    --button-hover-bg-color: #45a049;
-    --button-focus-outline-color: #45a049;
+    --button-hover-bg-color: #47794a;
+    --button-focus-outline-color: #47794a;
 }
 
 [data-theme="dark"] {
@@ -21,13 +21,13 @@
     --nav-bg-color: #222;
     --nav-text-color: white;
     --nav-hover-bg-color: #444;
-    --nav-active-border-color: #4CAF50;
-    --link-color: #4CAF50;
-    --link-visited-color: #2e7d32;
-    --button-bg-color: #4CAF50;
+    --nav-active-border-color: #47794a;
+    --link-color: #47794a;
+    --link-visited-color: #47794a;
+    --button-bg-color: #47794a;
     --button-text-color: white;
-    --button-hover-bg-color: #45a049;
-    --button-focus-outline-color: #45a049;
+    --button-hover-bg-color: #47794a;
+    --button-focus-outline-color: #47794a;
 }
 
 body {
