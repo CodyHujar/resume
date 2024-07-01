@@ -39,9 +39,16 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            targetElement.scrollIntoView({
                 behavior: 'smooth'
             });
+
+            // Move focus to the target element for accessibility
+            targetElement.setAttribute('tabindex', '-1'); // Make element focusable
+            targetElement.focus();
         });
     });
 
