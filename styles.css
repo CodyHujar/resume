@@ -131,16 +131,20 @@ section:target {
 
 #resume nav {
     margin-bottom: 1em;
+    background-color: var(--bg-color);
 }
 
 #resume nav ul {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    padding: 0;
 }
 
 #resume nav ul li {
     display: inline;
     margin-right: 1em;
+    padding: 0.5em 0;
 }
 
 #resume nav ul li a {
@@ -148,11 +152,14 @@ section:target {
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.3s, color 0.3s;
+    padding: 0.5em 1em;
+    border-radius: 3px;
 }
 
 #resume nav ul li a:hover,
 #resume nav ul li a:focus {
     border-bottom: 2px solid var(--nav-active-border-color);
+    color: var(--text-color);
 }
 
 #resume nav ul li a:visited {
