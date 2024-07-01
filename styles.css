@@ -6,8 +6,6 @@
     --nav-text-color: white;
     --nav-hover-bg-color: #555;
     --nav-active-border-color: #47794a;
-    --link-color: #47794a;
-    --link-visited-color: #47794a;
     --button-bg-color: #47794a;
     --button-text-color: white;
     --button-hover-bg-color: #47794a;
@@ -22,27 +20,10 @@
     --nav-text-color: white;
     --nav-hover-bg-color: #444;
     --nav-active-border-color: #46AF46;
-    --link-color: #46AF46;
-    --link-visited-color: #46AF46;
     --button-bg-color: #46AF46;
     --button-text-color: white;
     --button-hover-bg-color: #46AF46;
     --button-focus-outline-color: #46AF46;
-}
-
-a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover,
-a:focus {
-    color: var(--link-hover-color);
-}
-
-a:visited {
-    color: var(--link-visited-color);
 }
 
 body {
