@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Add event listeners to buttons
+    // Add event listeners to navigation buttons
     buttons.forEach(button => {
         button.addEventListener('click', function() {
             const contentId = button.getAttribute('data-content');
@@ -76,5 +76,19 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             body.setAttribute('data-theme', 'dark');
         }
+    });
+
+    // Portfolio "Read More" Toggle Functionality
+    document.querySelectorAll(".toggle-details").forEach(button => {
+        button.addEventListener("click", function() {
+            const details = this.nextElementSibling;
+            if (details.style.display === "block") {
+                details.style.display = "none";
+                this.textContent = "Read More";
+            } else {
+                details.style.display = "block";
+                this.textContent = "Read Less";
+            }
+        });
     });
 });
