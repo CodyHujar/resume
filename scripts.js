@@ -92,3 +92,65 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll(".portfolio-images img");
+    const lightbox = document.createElement("div");
+    lightbox.id = "lightbox";
+    lightbox.classList.add("hidden"); 
+    lightbox.innerHTML = `
+        <button id="lightbox-close" aria-label="Close">✕</button>
+        <button id="lightbox-prev" aria-label="Previous image">❮</button>
+        <img id="lightbox-image" src="" alt="">
+        <button id="lightbox-next" aria-label="Next image">❯</button>
+    `;
+    document.body.appendChild(lightbox);
+
+    const lightboxImage = document.getElementById("lightbox-image");
+    const closeButton = document.getElementById("lightbox-close");
+    const nextButton = document.getElementById("lightbox-next");
+    const prevButton = document.getElementById("lightbox-prev");
+
+    let currentIndex = 0;
+    let imageArray = [];
+
+    function openLightbox(index) {
+        lightboxImage.src = imageArray[index].src;
+        lightboxImage.alt = imageArray[index].alt;
+        lightbox.setAttribute("aria-hidden", "false");
+        lightbox.classList.remove("hidden");
+        closeButton.focus();
+    }
+
+    function closeLightbox() {
+        lightbox.setAttribute("aria-hidden", "true");
+        lightbox.classList.add("hidden");
+    }
+
+    function navigateLightbox(direction) {
+        currentIndex = (currentIndex + direction + imageArray.length) % imageArray.length;
+        openLightbox(currentIndex);
+    }
+
+    images.forEach((image, index) => {
+        image.addEventListener("click", function(event) {
+            event.preventDefault();
+            imageArray = Array.from(this.closest(".portfolio-images").children);
+            currentIndex = imageArray.indexOf(this);
+            openLightbox(currentIndex);
+        });
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+    nextButton.addEventListener("click", () => navigateLightbox(1));
+    prevButton.addEventListener("click", () => navigateLightbox(-1));
+
+    document.addEventListener("keydown", function(event) {
+        if (lightbox.getAttribute("aria-hidden") === "false") {
+            if (event.key === "Escape") closeLightbox();
+            if (event.key === "ArrowRight") navigateLightbox(1);
+            if (event.key === "ArrowLeft") navigateLightbox(-1);
+        }
+    });
+});
+
